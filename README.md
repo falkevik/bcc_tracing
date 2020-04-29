@@ -1,6 +1,6 @@
 # bcc_tracing
 BCC tracing of pids allocations in the Beam
-
+<pre>
 $ sudo ./erl_trace.py -bp /home/jonas/src/otp/bin/x86_64-unknown-linux-gnu/beam.smp -fs 20000
 [sudo] password for jonas:
 Exit with ctrl-c
@@ -19,3 +19,5 @@ Eshell V10.7.1  (abort with ^G)
 12> spawn(fun() -> prim_file:read_file("/home/jonas/Downloads/bigfile") end).
 <0.105.0>
 13>
+
+</pre>
